@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Oswald:wght@200..700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Special+Gothic+Expanded+One&family=Teko:wght@300..700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.signup{
+ text-align: center;
+ background-image: url(bg.jpg);
+ color: white;
+ background-size: cover;
+} 
+.signup #music{
+  font-size: 45px;
+  margin-top: 72px;
+}
+.signup h1{
+  font-family: "Oswald", sans-serif;
+  font-size: 50px;
+ }
+.signup .cnt1{
+  margin-top: 28px;
+  font-size: 20px;
+  font-weight: 10px;
+  letter-spacing: 3px;
+}
+.signup form{
+  margin-top: 10px;
+}
+.signup form label{
+   font-family: "Teko", sans-serif;
+   font-size: 28px;
+}
+.signup form input{
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px 60px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid gray;
+}
+.signup form input:hover{
+  box-shadow: 0 0 8px whitesmoke;
+}
+.signup .cnt2{
+  font-size: 13px;
+  text-decoration: underline;
+  margin-top: 4px;
+  cursor: pointer;
+  color: #17eadd;
+}
+.signup .btn1 {
+  border-radius: 15px;
+  background-color: #17eadd;
+  border: 3px solid black;
+  padding:  3px 80px;
+  margin-top: 13px;
+  cursor: pointer;
+  font-size: 25px;
+  font-family: "Teko", sans-serif;
+}
+.signup .btn1:hover{
+  border: 3px solid white;
+   box-shadow: 0 0 8px whitesmoke;
+}
+.signup .btn1 a{
+  color: black;
+  text-decoration: none;
+}
+.signup .line{
+  margin: 15px 0;
+  font-size: 20px;
+}
+.signup .btn{
+  border: 2px solid gray;
+  margin-top: 9px;
+  padding: 10px 40px;
+  border-radius: 20px;
+  font-size: 16px;
+  background-color: transparent;
+  color: white;
+  width: 380px;
+}
+.signup .btn:hover{
+  border: 2px solid white;
+  cursor: pointer;
+  box-shadow: 0 0 8px whitesmoke;
+}
+.signup .btn i{
+  font-size: 22px;
+}
+.signup .btn4{
+  margin-bottom: 50px;
+}
+.signup .cnt3{
+  padding: 15px;
+}
+.signup .cnt3 a{
+  color: white;
+}
+.signup .cnt3 a:hover{
+  color: #17eadd;
+}
+
+
+/* MEDIA QUERY */
+@media (max-width: 768px) {
+  .signup {
+    padding: 20px;
+    background-position: center;
+  }
+    .signup #music {
+    font-size: 35px;
+    margin-top: 40px;
+  }
+  .signup h1 {
+    font-size: 36px;
+  }
+  .signup .cnt1{
+  margin-top: 0;
+  font-size: 15px;
+  font-weight: 10px;
+  }
+  .signup .btn1 {
+  padding:  3px 70px;
+  }
+  .signup .btn{
+  margin-top: 8px;
+  padding: 10px 40px;
+  width: 350px;
+  }
+  .signup .btn i{
+  font-size: 20px;
+}
+   
+}
+@media (max-width: 450px){
+  .signup form input{
+    padding: 7px 30px;
+    width: 82%;
+  }
+  .signup .cnt2{
+    font-size: 10px;
+  }
+  .signup .btn1 {
+  border-radius: 15px;
+  padding:  3px 50px;
+  margin-top: 10px;
+  font-size: 20px;
+  }
+  .signup .line{
+  margin: 10px 0;
+  font-size: 12px;
+  }
+  .signup .btn{
+  width: 80%;
+  font-size: 12px;
+  padding: 11px 15px;
+  }
+  .signup .btn i{
+  font-size: 10px;
+  }
+  .signup .cnt3 {
+    font-size: 13px;
+  }
+  .signup .cnt3 a{
+    font-size: 15px;
+  }
+
+}

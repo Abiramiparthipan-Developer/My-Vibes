@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Vibe's</title>
+	<link rel="icon" type="text/css" href="logo.png">
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Oswald:wght@200..700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Special+Gothic+Expanded+One&family=Teko:wght@300..700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.page{
+	background-color: black;
+	color: white;
+}
+p{
+	font-size: 50px;
+	text-align: center;
+	font-family: "Oswald", sans-serif;
+	padding-top: 55px;
+}
+.page .container{
+	padding: 20px 260px;
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: space-between;
+
+}
+.page .container button{
+	border-radius: 7px;
+	font-family: "Libre Baskerville", serif;
+	width: 240px;
+	padding: 20px 10px 0 30px;
+	margin-top: 40px;
+	margin-left: 30px;
+	border: 3px solid black;
+	justify-content: space-between;
+	align-content: initial;
+	justify-items: initial;
+	display: flex;
+	cursor: pointer;
+	font-size: 16px;
+	color: white;
+}
+.page .container button:hover{
+	box-shadow: 0 0 25px whitesmoke;
+	border: 3px solid white;
+}
+.page .container .bt10{
+	margin-bottom: 20px;
+}
+.page .container img{
+	height: 70px;
+	background-size: cover;
+}
+.page .container a{
+	text-decoration: none;
+}
+/* MEDIA QUERY */
+@media (max-width:1100px){
+	.page .container{
+	padding: 20px 150px;
+	}
+	.page .container button{
+		width: 230px;
+		margin: 10px;
+	}
+	p{
+	font-size: 45px;
+	}
+}
+@media (max-width:850px){
+	.page .container{
+	padding: 20px 70px;
+	}
+	.page .container button{
+		width: 200px;
+		font-size: 14px;
+	}
+	.page .container .bt10{
+	margin-bottom: 5px;
+}
+}
+@media (max-width:620px){
+	.page .container{
+	padding: 20px 50px;
+	}
+	.page .container button{
+		width: 180px;
+		font-size: 13px;
+	}
+	.page .container img{
+	height: 50px;
+	}
+	p{
+	font-size: 30px;
+	margin-top: 30px;
+	}
+}
+@media (max-width:530px){
+	.page .container{
+	padding: 20px 35px;
+	}
+	.page .container button{
+		width: 150px;
+		font-size: 12px;
+		margin: 5px;
+		padding: 10px 10px;
+	}
+	.page .container img{
+	height: 40px;
+	}
+	p{
+	font-size: 28px;
+	}
+}
+@media (max-width:394px){
+	.page .container{
+	padding: 20px 10px;
+	}
+	.page .container button{
+		width: 130px;
+		font-size: 11px;
+		margin: 0 4px;
+		padding: 10px 10px;
+	}
+	.page .container img{
+	height: 38px;
+	}
+	p{
+	font-size: 25px;
+	}
+}
+
+
+	
+</style>
+<body>
+<div class="page">
+	<p><b>What music do you like ?</b></p>
+	<div class="container">	
+		<a href="home.html"><button class="btn bt1" style="background-color: red;"><b>Hindi</b><img src="language/singer1.png"></button></a>
+		<a href="home.html"><button class="btn bt2" style="background-color: #e18a14 ;">International<img src="language/singer2.png"></button></a>
+		<a href="home.html"><button class="btn bt3" style="background-color: #a80087  ;">Punjabi<img src="language/singer3.png"></button></a>
+		<a href="home.html"><button class="btn bt4" style="background-color: #c8aa00  ;">Tamil<img src="language/singer4.png"></button></a>
+		<a href="home.html"><button class="btn bt5" style="background-color: #00a912  ;">Telugu<img src="language/singer5.png"></button></a>
+		<a href="home.html"><button class="btn bt6" style="background-color: #00a98a ;">Malayalam<img src="language/singer6.png"></button></a>
+		<a href="home.html"><button class="btn bt7" style="background-color: #e18a14 ;">Marathi<img src="language/singer7.png"></button></a>
+		<a href="home.html"><button class="btn bt8" style="background-color: #ca0000  ;">Gujarati<img src="language/singer8.png"></button></a>
+		<a href="home.html"><button class="btn bt9" style="background-color: #001fba ;">Bengali<img src="language/singer9.png"></button></a>
+		<a href="home.html"><button class="btn bt10" style="background-color: #540e95 ;">Kannada<img src="language/singer10.png"></button></a>
+		<a href="home.html"><button class="btn bt11" style="background-color: #ce1ea3 ;">Sanskrit<img src="language/singer11.png"></button></a>
+		<a href="home.html"><button class="btn bt12" style="background-color: #92001a ;">Arabic<img src="language/singer12.png"></button></a>
+	</div>
+</div>
+</body>
+</html>

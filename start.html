@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Vibe's</title>
+    <link rel="icon" type="text/css" href="logo.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Oswald:wght@200..700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Special+Gothic+Expanded+One&family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Oswald:wght@200..700&family=Pacifico&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}	
+/*NAVBAR*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 20px 30px;
+}
+.logo {
+  font-size: 35px;
+  font-family: "Alfa Slab One", serif;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 5rem;
+  margin-right: 100px;
+  font-family: "Ancizar Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 20px;
+}
+.nav-links a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+.nav-links a:hover {
+  color: #1db954; 
+  font-weight: bold;
+}
+/* MEDIA QUERY */
+@media (max-width:991px) {
+  .navbar {
+   padding: 20px 15px;
+  }
+  .logo {
+  font-size: 30px;
+  }
+  .nav-links {
+   padding-left:50px;
+   margin-right: 50px;
+   gap: 3rem;
+   }
+   .nav-links a{
+  font-size: 16px;
+  align-items: center;
+  }
+}
+@media (max-width:768px){
+  .logo {
+  font-size: 28px;
+  }
+  .nav-links {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 5px;
+  margin: 11px 0;
+  }
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/*PAGE1*/
+.container1{
+  background-image: url(homebg.jpg);
+  background-size: cover;
+  padding-left: 50px;
+  padding-bottom: 20px;
+}
+.container1 .txt1,.txt2{
+  font-size: 65px;
+  font-family: "Oswald", sans-serif;
+}
+.container1 .txt1{
+  padding: 50px 0 0px 0px;
+  color: white;
+}
+.container1 .txt2{
+  color:#1db954 ;
+}
+.container1 p{
+  color: white;
+  font-size: 20px;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  width: 550px;
+  padding: 30px 0;
+}
+/* MEDIA QUERY */
+@media(max-width:991px){
+  .container1{
+    background-position: center;
+    padding-left: 20px;
+  }
+  .container1 .txt1,.txt2{
+  font-size: 60px;
+  } 
+  .container1 p{
+    width: 60%;
+    flex-wrap: wrap;
+  }
+  .container1 .txt1{
+  padding: 50px 0 0px 0px;
+  }
+}
+@media(max-width:768px){
+  .container1{
+    background-position: center;
+    padding-left: 20px;
+    background-image: url(loginbg.jpg);
+  background-size: cover;
+  }
+  .container1 .txt1,.txt2{
+  font-size: 30px;
+  } 
+  .container1 p{
+    width: 90%;
+    font-size: 15px;
+    padding: 5px;
+  }
+  .container1 .txt1{
+  padding: 30px 0 0px 0px;
+  }
+  .container1 .btn{
+  flex-wrap: wrap;
+  padding: 10px 0 20px 0;
+   margin-bottom: 0px;
+  }
+  .container1 .btn2{
+    margin-left: 20px;
+    }
+}
+@media(max-width:350px){
+  .container1 .btn2{
+    margin: 0px;
+    margin-top: 15px;
+  }
+  .container1 .btn{
+  padding: 5px 0 5px 0;
+  margin: 0px;
+  }
+  .container1 p{
+    font-size: 13.5px;
+  }
+}
+
+
+/* AUDIO PLAYER */
+.audio-player {
+  background: #1e1e1e;
+  padding: 10px;
+  max-width: 80%;
+  margin: auto;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 10px;
+}
+.audio-player:hover{
+  box-shadow: 0 0 15px rgb(0, 0, 0);
+  max-width: 82%;
+}
+.audio-player h4 {
+  margin-bottom: 10px;
+  font-size: 19px;
+  color: white;
+ }
+.audio-player :hover{
+	color: springgreen;
+}
+.audio-player audio {
+  width: 95%;
+}
+/* MEDIA QUERY */
+@media (max-width:991px){
+  .audio-player {
+  padding: 5px 2px;
+  }
+  .audio-player h4 {
+  margin-bottom: 5px;
+  font-size: 15px;
+  }
+  .audio-player audio {
+  width: 95%;
+  height: 30px;
+  font-size: 15px;
+}
+}
+@media (max-width:768px){
+  .audio-player {
+  padding: 0;
+  }
+  .audio-player h4 {
+  margin-bottom: 5px;
+  font-size: 13px;
+  }
+  .audio-player audio {
+  font-size: 5px;
+}
+}
+@media (max-width:500px){
+  .audio-player {
+  padding: 0;
+  }
+  .audio-player h4 {
+  margin-bottom: 5px;
+  font-size: 12px;
+  }
+  .audio-player audio {
+  font-size: 4px;
+  width: 97%;
+  height: 30px;
+}
+}
+@media (max-width:350px){
+  .audio-player {
+  padding: 0;
+  }
+  .audio-player h4 {
+  margin-bottom: 5px;
+  font-size: 10px;
+  }
+  .audio-player audio {
+  font-size: 1px;
+  width: 97%;
+  height: 20px;
+}
+}
+
+
+
+/*FOOTER*/
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Lexend:wght@100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+.music-footer {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 100px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.footer-logo h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #1db954; /* Spotify green */
+}
+
+.footer-logo p {
+  margin: 5px 0 0;
+  font-size: 16px;
+  color: #ccc;
+  font-family: "Ancizar Sans", sans-serif;
+}
+
+.footer-social a {
+  margin: 0 10px;
+  color: #ccc;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #1db954;
+}
+
+/* MEDIA QUERY */
+@media (max-width:991px){
+  .footer-logo h2{
+    font-size: 19px;
+  }
+  .footer .logo{
+    font-size: 20px;
+  }
+  .music-footer{
+    padding: 15px 0;
+  }
+  .footer-logo p {
+  font-size: 10px;
+   margin:2px;
+  }
+  .footer-social a {
+  font-size: 15px;
+  margin: 2px;
+  }
+}
+
+</style>
+    
+</body>
+<nav class="navbar">
+    <div class="logo"><i id="music" class="fa-solid fa-music" style="color: white;"></i>&nbsp MY VIBE'S</div>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="#">Browse</a></li>
+    </ul>
+ 	  </nav>
+<!-- PAGE1 -->
+<div class="container1">
+    <h1 class="txt1">Discover Your Next</h1>
+    <h1 class="txt2">Favorite Music</h1>
+    <p>Explore Thousands of Artists,Songs,and Playlists Curated Just For You.</p>
+</div>
+
+<div class="audio-player">
+  <h4>Vidaamuyarchi - Sawadeeka Lyric</h4>
+  <audio controls autoplay src="actor3,4/aj1.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>Sawadeeka Video | Vidaamuyarchi</h4>
+  <audio controls src="actor3,4/aj2.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>Sotta Sotta Official Video </h4>
+  <audio controls src="ar/ar1.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>Sakkarai Nilavea </h4>
+  <audio controls src="ar/ar2.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>Kodi Aruvi</h4>
+  <audio controls src="ar/ar3.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>Water Packet</h4>
+  <audio controls src="ar/ar4.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>Manithan</h4>
+  <audio controls src="ar/ar5.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>Siragugal Vanthathu  </h4>
+  <audio controls src="actor13,14/arya1.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>Pookkal Pookkum </h4>
+  <audio controls src="actor13,14/arya2.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>Engey Andha Vennila (Kunal ) </h4>
+  <audio controls src="chitra/Chitra1.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>"மல்லிகையே மல்லிகையே </h4>
+  <audio controls src="chitra/chitra2.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>Sollathan Ninaikiren</h4>
+  <audio controls src="chitra/chitra3.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>Kuzhaloodum Kannanukku</h4>
+  <audio controls src="chitra/chitra4.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>Amma (Tamil) Varisu</h4>
+  <audio controls src="chitra/chitra5.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>Yaaradi Nee Mohini | Dhanush, Nayanthara</h4>
+  <audio controls src="actor3,4/dhanush1.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>Maari 2 - Maari's Aanandhi (Video Song) | Dhanush</h4>
+  <audio controls src="actor3,4/dhanush2.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>Anbae Anbae </h4>
+  <audio controls src="hari/hari1.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>Un Per Solla Aasaithaan </h4>
+  <audio controls src="hari/hari2.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>En Jeevan</h4>
+  <audio controls src="hari/hari3.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>Venmegam</h4>
+  <audio controls src="hari/hari4.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>Ennai Thalatta Varuvala</h4>
+  <audio controls src="hari/hari5.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>Koondu kulla Enna Vachu </h4>
+  <audio controls src="ilaya/ilaya1.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>Viduthalai Part </h4>
+  <audio controls src="ilaya/ilaya2.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>Unna Nenachu</h4>
+  <audio controls src="ilaya/ilaya3.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>ஒளியிலே தெரிவது</h4>
+  <audio controls src="ilaya/ilaya4.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>Dhinam Dhinamum</h4>
+  <audio controls src="ilaya/ilaya5.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>Intha Mamanoda Manasu </h4>
+  <audio controls src="janaki/janaki1.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>Chinna Chinna Vanna Kuyil... </h4>
+  <audio controls src="janaki/janaki2.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>தூதுவளை இலை அரைச்சி</h4>
+  <audio controls src="janaki/janaki3.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>Ooru Sanam</h4>
+  <audio controls src="janaki/janaki4.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>Rasave Unna Nambi </h4>
+  <audio controls src="janaki/janaki5.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>Adada Adada Enai Yetho</h4>
+  <audio controls src="actor11,12/jr1.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>Kavithayae Theriyuma</h4>
+  <audio controls src="actor11,12/jr2.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>Sugar Baby </h4>
+  <audio controls src="actor5,6/kamal1.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>Pathala Pathala | VIKRAM | Kamal Haasan</h4>
+  <audio controls src="actor5,6/kamal2.m4a" type="audio/mpeg"></audio>
+</div>
+
+
+
+<!-- FOOTER -->
+<div class="page6">
+<div class="music-footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <div class="logo"><i id="music" class="fa-solid fa-music" style="color: white;"></i>&nbsp MY VIBE'S</div>
+      <p>Your daily dose of music</p>
+    </div>
+
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+</div>
+</div>
+</html>

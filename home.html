@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Vibe's</title>
+	<link rel="icon" type="text/css" href="logo.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Oswald:wght@200..700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Special+Gothic+Expanded+One&family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Oswald:wght@200..700&family=Pacifico&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 20px 30px;
+}
+.logo {
+  font-size: 35px;
+  font-family: "Alfa Slab One", serif;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 5rem;
+  padding-left:350px;
+}
+.nav-links a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+.nav-links a:hover {
+  color: #1db954; 
+  font-weight: bold;
+}
+.login-btn, .signup-btn {
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+.login-btn {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+.login-btn:hover {
+  background-color: white;
+  color: #121212;
+}
+.signup-btn {
+  background-color: #1db954;
+  color: white;
+}
+.signup-btn:hover {
+  background-color: white;
+  color: black;
+}
+/* MEDIA QUERY */
+@media (max-width:1050px) {
+  .navbar {
+   padding: 20px 20px;
+  }
+  .logo {
+  font-size: 33px;
+  }
+  .nav-links {
+   padding-left:200px;
+  }
+}
+@media (max-width:880px){
+  .navbar {
+   padding: 20px 15px;
+  }
+  .logo {
+  font-size: 30px;
+  }
+  .nav-links {
+  gap: 3rem;
+  padding-left:150px;
+}
+}
+@media (max-width:768px){
+  .logo {
+  font-size: 28px;
+  }
+  .nav-links {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 1rem;
+  margin: 15px 0;
+  }
+  .login-btn, .signup-btn {
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+  }
+  .signup-btn{
+    margin-left: 20px;
+  }
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+    }
+  .logo {
+  font-size: 25px;
+  }
+}
+
+
+/*PAGE1*/
+.container1{
+  background-image: url(homebg.jpg);
+  background-size: cover;
+  padding-left: 50px;
+  padding-bottom: 98px;
+}
+.container1 .txt1,.txt2{
+  font-size: 65px;
+  font-family: "Oswald", sans-serif;
+}
+.container1 .txt1{
+  padding: 150px 0 0px 0px;
+  color: white;
+}
+.container1 .txt2{
+  color:#1db954 ;
+}
+.container1 p{
+  color: white;
+  font-size: 20px;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  width: 550px;
+  padding: 30px 0;
+}
+.container1 .btn1,.btn2{
+  padding: 8px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.container1 .btn2{
+  margin-left: 25px;
+  background: #1db954;
+  color: white;
+ }
+.container1 .btn2:hover{
+  background-color: white;
+  color: black;
+}
+.container1 .btn{
+  padding: 20px 0 40px 0;
+}
+.container1 .btn1{
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+.container1 .btn1:hover{
+  background-color: white;
+  color: black;
+}
+/* MEDIA QUERY */
+@media(max-width:991px){
+  .container1{
+    background-position: center;
+    padding-left: 30px;
+  }
+  .container1 .txt1,.txt2{
+  font-size: 60px;
+  } 
+  .container1 p{
+    width: 60%;
+    flex-wrap: wrap;
+  }
+  .container1 .txt1{
+  padding: 50px 0 0px 0px;
+  }
+}
+@media(max-width:768px){
+  .container1{
+    background-position: center;
+    padding-left: 20px;
+  }
+  .container1 .txt1,.txt2{
+  font-size: 40px;
+  } 
+  .container1 p{
+    width: 90%;
+    flex-wrap: wrap;
+  }
+  .container1 .txt1{
+  padding: 30px 0 0px 0px;
+  }
+  .container1 .btn{
+  flex-wrap: wrap;
+  padding: 10px 0 20px 0;
+   margin-bottom: 0px;
+  }
+  .container1 .btn2{
+    margin-left: 20px;
+    }
+}
+@media(max-width:350px){
+  .container1 .btn2{
+    margin: 0px;
+    margin-top: 15px;
+  }
+  .container1 .btn{
+  padding: 5px 0 5px 0;
+  margin: 0px;
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/*PAGE2*/
+.page2{
+  background-color: #010101;
+  color: white;
+}
+.page2 h1{
+   font-family: "Oswald", sans-serif;
+   font-size: 25px;
+  padding: 10px 0 15px 15px;
+}
+.page2 .singers {
+ align-items: center;
+}
+.page2 .singers img{
+  height: 12%;
+  width: 12%;
+  border-radius: 50%;
+  margin:20px 15px ;
+}
+.page2 .singers img:hover{
+  box-shadow: 0 0 10px whitesmoke;
+  border: 1px solid whitesmoke;
+}
+/* MEDIA QUERY */
+@media(max-width:1450px){
+  .page2 .singers {
+  align-items: center;
+  padding: 5px 5%;
+  }
+}
+@media(max-width:991px){
+  .page1{
+   background-position: center;
+  }
+  .page2 .singers {
+  text-align: center;
+  padding: 10px 3%;
+  }
+  .page2 .singers img{
+  margin:9px 6px ;
+  display: inline-block;
+  justify-content: space-between;
+  }
+  .page2 h1{
+   padding: 10px 0 5px 15px;
+}
+}
+@media(max-width:768px){
+  .page2 .singers {
+   background-position: center;
+   text-align: center;
+   }
+  .page2 .singers img{
+  margin:9px 10px ;
+  display: inline-block;
+  justify-content: center;
+  }
+  .page2 h1{
+   padding: 10px 0 5px 15px;
+  }
+  .page2 .singers img{
+  height: 20%;
+  width: 20%;
+  border-radius: 50%;
+  margin:5px 5px ;
+  }
+  .page2 h1{
+    font-size: 20px;
+    padding: 10px 0 0px 10px;
+  }
+}
+@media(max-width:500px){
+  .page2 .singers img{
+  height: 25%;
+  width: 25%;
+  }
+}
+
+
+/*PAGE3*/
+.page3{
+  background-color: #010101;
+  color: white;
+}
+.page3 h1{
+   font-family: "Oswald", sans-serif;
+   font-size: 25px;
+  padding: 10px 0 15px 15px;
+}
+.page3 .actors {
+ align-items: center;
+ flex-wrap: wrap;
+ text-align: center;
+}
+.page3 .actors img{
+  height: 11%;
+  width: 11%;
+  border-radius: 30%;
+  margin:20px 22px ;
+}
+.page3 .actors img:hover{
+  box-shadow: 0 0 20px whitesmoke;
+  border: 1px solid whitesmoke;
+}
+/* MEDIA QUERY */
+@media(max-width:768px){
+  .page3 .actors {
+   background-position: center;
+   text-align: center;
+   }
+  .page3 .actors img{
+  height: 20%;
+  width: 20%;
+  display: inline-block;
+  justify-content: center;
+  margin:10px 11px ;
+  }
+
+  .page3 h1{
+    font-size: 20px;
+    padding: 10px 0 0px 10px;
+  }
+}
+
+
+/*PAGE4*/
+.page4{
+  background-color: #010101;
+  color: white;
+  padding-bottom: 80px;
+}
+.page4 h1{
+   font-family: "Oswald", sans-serif;
+   font-size: 25px;
+  padding: 10px 0 15px 15px;
+}
+.page4 .new {
+ align-items: center;
+ flex-wrap: wrap;
+}
+.page4 .new img{
+  height: 11%;
+  width: 11%;
+  border-radius: 20%;
+  margin:20px 22px ;
+}
+.page4 .new img:hover{
+  box-shadow: 0 0 20px whitesmoke;
+  border: 1px solid whitesmoke;
+}
+/* MEDIA QUERY */
+@media(max-width:768px){
+  .page4 .new {
+   background-position: center;
+   text-align: center;
+   }
+  .page4 .new img{
+  height: 20%;
+  width: 20%;
+  display: inline-block;
+  justify-content: center;
+  margin:10px 11px ;
+  }
+  .page4{
+  padding-bottom: 20px;
+  }
+  .page4 h1{
+    font-size: 20px;
+    padding: 10px 0 0px 10px;
+  }
+}
+
+/*FOOTER*/
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Lexend:wght@100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+.music-footer {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+.footer-logo h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #1db954; /* Spotify green */
+}
+.footer-logo p {
+  margin: 5px 0 0;
+  font-size: 16px;
+  color: #ccc;
+  font-family: "Ancizar Sans", sans-serif;
+}
+.footer-social a {
+  margin: 0 10px;
+  color: #ccc;
+  font-size: 18px;
+ }
+.footer-social a:hover {
+  color: #1db954;
+}
+h1:hover{
+  color: #1db954;
+}
+/* MEDIA QUERY */
+@media (max-width:991px){
+  .footer-logo h2{
+    font-size: 19px;
+  }
+  .footer .logo{
+    font-size: 20px;
+  }
+  .music-footer{
+    padding: 15px 0;
+  }
+  .footer-logo p {
+  font-size: 10px;
+   margin:2px;
+  }
+  .footer-social a {
+  font-size: 15px;
+  margin: 2px;
+  }
+}
+
+</style>
+<body>
+  <nav class="navbar">
+    <div class="logo"><i id="music" class="fa-solid fa-music" style="color: white;"></i>&nbsp MY VIBE'S</div>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="start.html">Browse</a></li>
+    </ul>
+    <div class="buttons">
+      <a href="login.html"><button class="login-btn">Log In</button></a>
+      <a href="index.html"><button class="signup-btn">Sign Up</button></a>
+    </div>
+  </nav>
+  
+<!-- PAGE1 -->
+<div class="container1">
+    <h1 class="txt1">Discover Your Next</h1>
+    <h1 class="txt2">Favorite Music</h1>
+    <p>Explore Thousands of Artists,Songs,and Playlists Curated Just For You.</p>
+    <div class="btn">
+      <a href="start.html"><button class="btn1">Start Listening</button></a>
+      <a href="start.html"><button class="btn2"><i class="fa-solid fa-play"></i>&nbsp Watch Now</button></a>
+    </div>
+    </div>
+<!-- PAGE2 -->
+<div class="page2">
+  <h1>To get you Started</h1>
+  <div class="singers">
+        <a href="sp.html"><img src="sp.jpg"></a>
+        <a href="chitra.html"><img src="chitra.jpg"></a>
+        <a href="yesu.html"><img src="yesudas.jpg"></a>
+        <a href="hari.html"><img src="hariharan.jpg"></a>
+        <a href="ilaya.html"><img src="ilayaraja.jpg"></a>
+        <a href="janaki.html"><img src="janaki.jpg"></a>
+        <a href="ar.html"><img src="ar.jpg"></a>
+    </div>
+</div>
+<!-- PAGE3 -->
+<div class="page3">
+  <h1>Actors</h1>
+  <div class="actors">
+        <a href="vj.html"><img src="actor1.jpg"></a>
+        <a href="rj.html"><img src="actor2.jpg"></a>
+        <a href="dhanush.html"><img src="actor3.jpg"></a>
+        <a href="ajith.html"><img src="actor4.jpg"></a>
+        <a href="suriya.html"><img src="actor5.jpg"></a>
+        <a href="kamal.html"><img src="actor6.jpg"></a>
+        <a href="vikaram.html"><img src="actor7.jpg"></a>
+        <a href="pr.html"><img src="actor8.jpg"></a>
+        <a href="vijays.html"><img src="actor9.jpg"></a>
+        <a href="simbu.html"><img src="actor10.jpg"></a>
+        <a href="sk.html"><img src="actor11.jpg"></a>
+        <a href="jr.html"><img src="actor12.jpg"></a>
+        <a href="karthi.html"><img src="actor13.jpg"></a>
+        <a href="arya.html"><img src="actor14.jpg"></a>
+  </div>
+</div>
+<!-- PAGE4 -->
+<div class="page4">
+  <h1>New Releases</h1>
+  <div class="new">
+        <a href="movie1.html"><img src="movie sg1/new1.jpg"></a>
+        <a href="movie2.html"><img src="movie sg1/new2.jpg"></a>
+        <a href="movie3.html"><img src="movie sg1/new3.jpg"></a>
+        <a href="movie4.html"><img src="movie sg1/new4.jpg"></a>
+        <a href="movie5.html"><img src="movie sg1/new5.jpg"></a>
+        <a href="movie6.html"><img src="movie sg1/new6.jpg"></a>
+        <a href="movie7.html"><img src="movie sg1/new7.jpg"></a>
+  </div>
+</div>
+<!-- FOOTER -->
+<div class="page6">
+<div class="music-footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <div class="logo"><i id="music" class="fa-solid fa-music" style="color: white;"></i>&nbsp MY VIBE'S</div>
+      <p>Your daily dose of music</p>
+    </div>
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+</div>
+</div>
+
+
+</body>
+</html>
+
+

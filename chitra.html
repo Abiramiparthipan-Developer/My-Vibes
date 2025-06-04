@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Vibe's</title>
+	<link rel="icon" type="text/css" href="logo.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Lexend:wght@100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Special+Gothic+Expanded+One&family=Teko:wght@300..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}	
+/*NAVBAR*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 20px 30px;
+}
+.logo {
+  font-size: 35px;
+  font-family: "Alfa Slab One", serif;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 6rem;
+  margin-right: 300px;
+  font-family: "Ancizar Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 20px;
+}
+.nav-links a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+.nav-links a:hover {
+  color: #1db954; 
+  font-weight: bold;
+}
+
+/*PAGE1*/
+.page1{
+	background-color: #d2d2d2;
+	border-radius: 20px;
+	margin: 40px 90px;
+	display: flex;
+	align-items: center;
+	padding: 20px 20px;
+}
+.page1 .image{
+	margin-left: 50px;
+}
+.page1 .image img{
+	border-radius: 20px;
+}
+.page1 .content{
+	padding: 0 50px;
+	font-family: "Oswald", sans-serif;
+}
+.page1 .content p{
+	padding: 5px 0;
+}
+
+
+.audio-player {
+  background: #1e1e1e;
+  padding: 10px;
+  max-width: 70%;
+  margin: auto;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 10px;
+}
+.audio-player:hover{
+  box-shadow: 0 0 15px gray;
+  max-width: 72%;
+}
+.audio-player h4 {
+  margin-bottom: 10px;
+  font-size: 19px;
+  color: white;
+ }
+.audio-player :hover{
+	color: springgreen;
+}
+.audio-player audio {
+  width: 95%;
+}
+/*FOOTER*/
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Lexend:wght@100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+.music-footer {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: 100px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.footer-logo h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #1db954; /* Spotify green */
+}
+
+.footer-logo p {
+  margin: 5px 0 0;
+  font-size: 16px;
+  color: #ccc;
+  font-family: "Ancizar Sans", sans-serif;
+}
+
+.footer-social a {
+  margin: 0 10px;
+  color: #ccc;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #1db954;
+}
+
+/* MEDIA QUERY */
+
+/* NAVBAR */
+@media (max-width:991px) {
+  .navbar {
+   padding: 20px 15px;
+  }
+  .logo {
+  font-size: 30px;
+  }
+  .nav-links {
+   padding-left:50px;
+   margin-right: 50px;
+   gap: 3rem;
+   }
+   .nav-links a{
+  font-size: 16px;
+  align-items: center;
+  }
+}
+@media (max-width:768px){
+  .logo {
+  font-size: 28px;
+  }
+  .nav-links {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 5px;
+  margin: 11px 0;
+  }
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* PAGE1 */
+@media (max-width: 768px) {
+  .page1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+  }
+  .page1 .image {
+    margin: 0 0 10px 0;
+  }
+  .page1 .image img {
+    max-width: 100%;
+    height: auto;
+  }
+  .page1 .content {
+    padding: 0 15px;
+    display: inline-block;
+  }
+  .page1 .content p{
+    display: inline-block;
+    padding: 0;
+  }
+}
+@media (max-width: 500px){
+  .page1 .content p{
+    font-size: 10px;
+    display: inline-block;
+  }
+  .page1 .content {
+    padding: 0;
+  }
+}
+
+/* AUDIO PLAYER */
+@media (max-width:991px){
+  .audio-player {
+  padding: 5px 2px;
+  }
+  .audio-player h4 {
+  margin-bottom: 5px;
+  font-size: 15px;
+  }
+  .audio-player audio {
+  width: 95%;
+  height: 30px;
+  font-size: 15px;
+}
+}
+@media (max-width:768px){
+  .audio-player {
+  padding: 0;
+  }
+  .audio-player h4 {
+  margin-bottom: 5px;
+  font-size: 13px;
+  }
+  .audio-player audio {
+  font-size: 5px;
+}
+}
+@media (max-width:500px){
+  .audio-player {
+  padding: 0;
+  width: 100%;
+  }
+  .audio-player h4 {
+  margin-bottom: 5px;
+  font-size: 12px;
+  }
+  .audio-player audio {
+  font-size: 4px;
+  width: 97%;
+  height: 30px;
+}
+}
+@media (max-width:350px){
+  .audio-player {
+  padding: 0;
+  width: auto;
+  }
+  .audio-player h4 {
+  margin-bottom: 5px;
+  font-size: 10px;
+  }
+  .audio-player audio contols {
+  font-size: 0.9PX;
+  width: 97%;
+  height: 10px;
+}
+}
+
+/* FOOTER */
+@media (max-width:991px){
+  .footer-logo h2{
+    font-size: 19px;
+  }
+  .footer .logo{
+    font-size: 20px;
+  }
+  .music-footer{
+    padding: 15px 0;
+  }
+  .footer-logo p {
+  font-size: 10px;
+   margin:2px;
+  }
+  .footer-social a {
+  font-size: 15px;
+  margin: 2px;
+  }
+  .music-footer {
+  margin-top: 40px;
+}
+}
+
+</style>
+
+
+
+
+<body>
+	<nav class="navbar">
+    <div class="logo"><i id="music" class="fa-solid fa-music" style="color: white;"></i>&nbsp MY VIBE'S</div>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="start.html">Browse</a></li>
+    </ul>
+ 	  </nav>
+
+	<div class="page1">
+		<div class="image"><img src="chitra.jpg"></div>
+		<div class="content">
+			<h2>Krishnan Nair Shantakumari Chithra</h2>
+			<p><div>Born : 27 July 1963 (age 61) Trivandrum, Kerala, India </div>
+          <div>  Alma master	: University of Kerala </div>
+          <div>  Occupations	: Singermusic, producer, Judge.</div>
+          <div>  Instrument	: Vocals</div></p>
+		</div>
+	</div>
+<div class="audio-player">
+  <h4>Engey Andha Vennila (Kunal ) </h4>
+  <audio controls src="chitra/Chitra1.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>"மல்லிகையே மல்லிகையே </h4>
+  <audio controls src="chitra/chitra2.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>Sollathan Ninaikiren</h4>
+  <audio controls src="chitra/chitra3.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>Kuzhaloodum Kannanukku</h4>
+  <audio controls src="chitra/chitra4.m4a" type="audio/mpeg"></audio>
+</div>
+<div class="audio-player">
+  <h4>Amma (Tamil) Varisu</h4>
+  <audio controls src="chitra/chitra5.m4a" type="audio/mpeg"></audio>
+</div>
+
+<!-- FOOTER -->
+<div class="page6">
+<div class="music-footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <div class="logo"><i id="music" class="fa-solid fa-music" style="color: white;"></i>&nbsp MY VIBE'S</div>
+      <p>Your daily dose of music</p>
+    </div>
+
+    <div class="footer-social">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

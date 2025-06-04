@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <title>My Vibe's</title>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Oswald:wght@200..700&family=Pacifico&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.page1{
+	padding: 20px 450px;
+	text-align: center;
+	background-image: url(loginbg.jpg);
+	background-size: cover;
+}
+.login{
+	border: 2px solid black;
+	border-radius: 8px;
+	background-color: black;
+	color: white;
+	box-shadow: 0 0 10px gray;
+}
+.login #music{
+	font-size: 45px;
+	margin-top: 22px;
+}
+.login h1{
+  font-family: "Oswald", sans-serif;
+  font-size: 35px;
+  margin-top: 25px;
+ }
+ .login .btn{
+  border: 2px solid gray;
+  margin-top: 10px;
+  padding: 10px 40px;
+  border-radius: 20px;
+  font-size: 13px;
+  background-color: transparent;
+  color: white;
+  width: 300px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  display: initial;
+  }
+.login .btn:hover{
+  border: 2px solid white;
+  cursor: pointer;
+}
+.login .btn i{
+  font-size: 22px;
+}
+.login .line{
+	color: gray;
+	margin-top: 12px;
+}
+.login form{
+	margin-top: 15px;
+	font-family: "Teko", sans-serif;
+}
+.login form input {
+	margin-top: 7px;
+	padding: 12px 55px;
+	border-radius: 8px;
+	background-color: transparent;
+	border: 2px solid gray;
+	color: white;
+}
+.login form input:hover{
+	border: 2px solid white;
+	box-shadow: 0 0 10px whitesmoke;
+}
+.login .button{
+	margin-top: 20px;
+	border-radius: 8px;
+	padding: 8px 70px;
+	font-family: "Oswald", sans-serif;
+	font-size: 20px;
+	background-color: #17eadd;
+	cursor: pointer;
+}
+.login .button:hover{
+	box-shadow: 0 0 15px white;
+	border: 2px solid white;
+}
+.login .cnt1{
+	color: gray;
+	font-size: 15px;
+	margin: 5px 0;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.login .cnt1:hover{
+	color: #17eadd;
+}
+.login .cnt2{
+	color: gray;
+	font-size: 15px;
+	margin: 9px 0 9px 0;
+	cursor: pointer;
+}
+.login .cnt2 a{
+	color: white;
+}
+.login .cnt2 a:hover{
+	color: #17eadd;
+}
+/* MEDIA QUERY */
+@media (max-width:1350px) {
+	.page1{
+		padding: 20px 250px;
+		background-position: center;
+	}
+}
+@media (max-width:991px) {
+	.page1{
+		padding: 20px 200px;
+	}
+}
+@media (max-width:768px) {
+	.page1{
+		padding: 20px 70px;
+	}
+}
+@media (max-width:530px) {
+	.page1{
+		padding: 20px 50px;
+		background-position: center;
+	}
+	.login .line{
+	font-size: 10px;
+	}
+	.login .button{
+	padding: 5px 40px;
+	font-size: 17px;
+	}
+	 .login .btn{
+    padding: 10px 20px;
+    font-size: 13px;
+    width: 250px;
+    }
+}
+@media (max-width:400px){
+	.page1{
+		padding: 10px 10px;
+		background-position: center;
+	}
+}
+
+</style>
+
+
+
+
+<body>
+	<!-- LOGIN PAGE -->
+	<div class="page1"><div class="login">
+		<i id="music" class="fa-solid fa-music"></i> 
+    	<h1>Login to My Vibe's</h1>
+		<button class="btn btn1"><i class="fa-brands fa-google"></i> &nbsp &nbsp &nbsp <b>Sign up with Google</b></button><br>
+    	<button class="btn btn2"><i class="fa-brands fa-facebook"></i> <b>Sign up with Facebook</b></button><br>
+    	<button class="btn btn3"><i class="fa-brands fa-apple"></i> &nbsp &nbsp &nbsp <b>Sign up with Apple</b></button><br>
+    	<button class="btn btn3"><b>Continue with Phone Number</b></button>	
+    	<p class=" line">____________________________________________</p>
+    <form>
+      <label for="email address"><b>Email or Username</b></label><br>
+      <input type="email address" name="email address" placeholder="Email or Username"><br><br>
+      <label for="email address"><b>Password</b></label><br>
+      <input type="email address" name="email address" placeholder="Password">
+    </form>
+    <a href="language.html"><button class="button">Log In</button></a>
+    <p class="cnt1">Forgot your password?</p>
+    <p class="cnt2">Don't have an account? <span style="color: white; font-size: 18px;text-decoration: underline;"><a href="index.html"><br>Sign up for My Vibe's</a></span></p>
+</div></div>
+</body>
+</html>
